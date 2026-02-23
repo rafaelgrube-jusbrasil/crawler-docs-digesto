@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^24.24.0"
+  },
+  "name": "node",
+  "version": "1.0.0",
+  "main": "digeto_pdf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
