@@ -10,7 +10,8 @@ Este projeto tem como objetivo realizar o *crawler* da documentação do site [D
 crawler-digesto/
 ├── digesto_pdf.js
 ├── package.json
-└── README.md
+├── README.md
+└── pdfs_digesto/          # Pasta gerada após execução (contém os PDFs)
 ```
 
 ---
@@ -48,6 +49,29 @@ node digesto_pdf.js
 ```
 
 > O script irá acessar a documentação, capturar o conteúdo e gerar os PDFs automaticamente.
+
+### 5. Localizar os arquivos gerados
+
+Após a execução, os arquivos PDF serão salvos em:
+
+```
+crawler-digesto/pdfs_digesto/
+```
+
+Você pode acessar a pasta com:
+
+```bash
+cd pdfs_digesto
+ls -la
+```
+
+Ou abrir diretamente no Finder:
+
+```bash
+open pdfs_digesto
+```
+
+> **📁 Nota:** A pasta `pdfs_digesto` é criada automaticamente na primeira execução do script caso não exista.
 
 ---
 
@@ -173,7 +197,8 @@ O **NVM** permite instalar e gerenciar várias versões do Node.js.
 
 - O **Node.js 16+** é recomendado.
 - O **Puppeteer** baixa uma versão própria do Chrome Headless — a primeira execução pode demorar um pouco.
-- Os PDFs serão gerados na pasta configurada dentro do script `digesto_pdf.js`.
+- Os PDFs são gerados automaticamente na pasta `pdfs_digesto/` dentro do diretório do projeto.
+- Cada arquivo PDF é nomeado sequencialmente com o título da página correspondente.
 
 ---
 
